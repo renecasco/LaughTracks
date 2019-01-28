@@ -4,4 +4,10 @@ class LaughTracksApp < Sinatra::Base
     @specials = Special.all
     erb :"comedians/index"
   end
+
+  get '/comedians/:id' do
+    @comedians = Comedian.where(params[:id])
+    @specials = Special.all
+    erb :"comedians/index"
+  end
 end
