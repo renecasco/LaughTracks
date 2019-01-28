@@ -1,13 +1,46 @@
-<% @comedians.each do |comedian| %>
-  <ul>
-    <li><%= comedian.name %></li>
-    <li><%= comedian.age %></li>
-    <li><%= comedian.city %></li>
-    <% comedian.specials.each do |special| %>
-      <ul>
-        <li><%= special.name %></li>
-        <li><%= special.run_time %></li>
-      </ul>
-    <% end %>
-  </ul>
-<% end %>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <title>Comedians</title>
+    <link rel="stylesheet" href="main.css" title="text/css" />
+  </head>
+
+  <body>
+    <h1>Comedians</h1>
+    <div class = "statistics">
+      <h3>Statistics</h3>
+      <p>Average Special Run Time:  <%= @specials.average(:run_time).round(2) %> min</p>
+      <p>Total TV Specials:  <%= @specials.count(:all)%></p>
+      <p>Average Age:  <%= @comedians.average(:age).round(0) %> years old</p>
+      <div class="dropdown">
+        <p class="dropbtn">Cities</p>
+        <div class="dropdown-content">
+          <% cities = @comedians.distinct.pluck(:city)%>
+          <% cities.each do |city| %>
+            <p><%= city %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class = "grid-container">
+      <% @comedians.each do |comedian| %>
+        <div class ="grid-item">
+          <h2><%= comedian.name %></h2>
+          <p>Age: <%= comedian.age %></p>
+          <p>City: <%= comedian.city %></p>
+          <p>Total Specials: <%= comedian.specials.count(:comedian_id) %></p>
+          <% comedian.specials.each do |special| %>
+            <div class = "special">
+              <img src = "<%= special.thumbnail %>" >
+              <div class = "text-block">
+                <p class = "special-text"><%= special.name %></p>
+                <p class = "special-text">Length: <%= special.run_time %> min</p>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  </body>
+</html>

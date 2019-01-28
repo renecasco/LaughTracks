@@ -1,0 +1,94 @@
+html {
+  font-family: arial;
+  background-color: black;
+}
+
+body {
+  background-image: url("http://paperlief.com/images/microphone-on-stage-wallpaper-3.jpg");
+}
+
+h1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 250%;
+  margin-bottom: 5;
+}
+
+.statistics {
+  display: grid;
+  margin-left: 60;
+  margin-right: 60;
+  margin-top: 10;
+  margin-bottom: 20;
+  border: 3px solid rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.8);
+  grid-template-areas:
+    'header header header header'
+    'column column column column';
+}
+
+.statistics h3 {
+  grid-area: header;
+  text-align: center;
+}
+
+.statistics p {
+text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 60px;
+  padding: 60px;
+  padding-top: 0;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 5px solid rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  text-align: center;
+
+}
+
+.special{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10;
+  justify-content: start;
+  margin-left: 20px;
+}
+
+.special-text {
+  text-align: left;
+  margin-left: 30px;
+}
+
+img {
+    width: 60px;
+}
+
+.dropbtn {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.dropdown:hover {
+  position: relative;
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+
+.dropdown-content {
+  display:none;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdown-content {display: block;}
