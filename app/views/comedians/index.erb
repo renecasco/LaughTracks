@@ -1,14 +1,30 @@
-<% @comedians.each do |comedian| %>
-  <ul>
-    <li><%= comedian.name %></li>
-    <li><%= comedian.age %></li>
-    <li><%= comedian.city %></li>
-    <% comedian.specials.each do |special| %>
-      <img class = "thumbnail" src = "<%= special.thumbnail %>" width="60">
-      <ul>
-        <li><%= special.name %></li>
-        <li>Length: <%= special.run_time %> min</li>
-      </ul>
-    <% end %>
-  </ul>
-<% end %>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <title>Comedians</title>
+    <link rel="stylesheet" href="main.css" title="text/css" />
+  </head>
+
+  <body>
+    <h1>Comedians</h1>
+    <div class = "grid-container">
+      <% @comedians.each do |comedian| %>
+        <div class ="grid-item">
+          <ul>
+            <li><%= comedian.name %></li>
+            <li><%= comedian.age %></li>
+            <li><%= comedian.city %></li>
+            <% comedian.specials.each do |special| %>
+              <img class = "thumbnail" src = "<%= special.thumbnail %>" width="60">
+              <ul>
+                <li><%= special.name %></li>
+                <li>Length: <%= special.run_time %> min</li>
+              </ul>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+    </div>
+  </body>
+</html>
