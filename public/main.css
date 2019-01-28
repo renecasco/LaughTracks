@@ -1,23 +1,43 @@
 html {
   font-family: arial;
+  background-color: black;
 }
 
 h1 {
-  color: red;
+  color: white;
   display: flex;
   justify-content: center;
+  font-weight: bolder;
+  font-size: 250%;
 }
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-gap: 50px;
-  background-color: #2196F3;
-  padding: 10px;
+  grid-gap: 60px;
+  padding: 60px;
 }
 
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
+  border: 5px solid rgba(0, 0, 0, 0.3);
+  padding: 10px;
   text-align: center;
+
+}
+
+.special{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10;
+  justify-content: start;
+  margin-left: 20px;
+}
+
+.special-text {
+  text-align: left;
+  margin-left: 30px;
+}
+
+img {
+    width: 60px;
 }

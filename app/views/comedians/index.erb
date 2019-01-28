@@ -11,18 +11,19 @@
     <div class = "grid-container">
       <% @comedians.each do |comedian| %>
         <div class ="grid-item">
-          <ul>
-            <li><%= comedian.name %></li>
-            <li><%= comedian.age %></li>
-            <li><%= comedian.city %></li>
-            <% comedian.specials.each do |special| %>
-              <img class = "thumbnail" src = "<%= special.thumbnail %>" width="60">
-              <ul>
-                <li><%= special.name %></li>
-                <li>Length: <%= special.run_time %> min</li>
-              </ul>
-            <% end %>
-          </ul>
+          <h2><%= comedian.name %></h2>
+          <p>Age: <%= comedian.age %></p>
+          <p>City: <%= comedian.city %></p>
+          <p>Total Specials: <%= comedian.specials.count(:comedian_id) %></p>
+          <% comedian.specials.each do |special| %>
+            <div class = "special">
+              <img src = "<%= special.thumbnail %>" >
+              <div class = "text-block">
+                <p class = "special-text"><%= special.name %></p>
+                <p class = "special-text">Length: <%= special.run_time %> min</p>
+              </div>
+            </div>
+          <% end %>
         </div>
       <% end %>
     </div>
