@@ -36,7 +36,7 @@ bill_burr.specials.create(name: "I'm Sorry You Feel That Way (2014)", run_time: 
 bill_burr.specials.create(name: "Walk Your Way Out (2017)", run_time: 77, thumbnail: "https://m.media-amazon.com/images/M/MV5BMGYwNDE4MDItNjQwYi00NWIwLWJmYTYtY2I5NDEyMGUxNWMwL2ltYWdlXkEyXkFqcGdeQXVyMjUwMTM3MTU@._V1_UY268_CR10,0,182,268_AL_.jpg")
 
 chris_rock.specials.create(name: "Never Scared (2004)", run_time: 80, thumbnail: "https://m.media-amazon.com/images/M/MV5BMTlhYzMzNzItNWMyYy00ZGRlLWI1N2UtOGI2YjIwOGEwYTViXkEyXkFqcGdeQXVyMTk3NDAwMzI@._V1_UX182_CR0,0,182,268_AL_.jpg")
-chris_rock.specials.create(name: "Kill the Messenger - London, New York, Johannesburg (2008)", run_time: 79, thumbnail: "https://m.media-amazon.com/images/M/MV5BMjAwMjQxNDA5OF5BMl5BanBnXkFtZTcwNTE3MzM5MQ@@._V1_UY268_CR11,0,182,268_AL_.jpg")
+chris_rock.specials.create(name: "Kill the Messenger (2008)", run_time: 79, thumbnail: "https://m.media-amazon.com/images/M/MV5BMjAwMjQxNDA5OF5BMl5BanBnXkFtZTcwNTE3MzM5MQ@@._V1_UY268_CR11,0,182,268_AL_.jpg")
 chris_rock.specials.create(name: "Tamborine (2018)", run_time: 64, thumbnail: "https://m.media-amazon.com/images/M/MV5BMGQ5NWJmMDktMDMxNS00ZWQzLWEzNjgtZWU5NjE0ZmZjYjc0XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UY268_CR4,0,182,268_AL_.jpg")
 
 wanda_sykes.specials.create(name: "Tongue Untied (2003)", run_time: 42, thumbnail: "https://m.media-amazon.com/images/M/MV5BMTczMjU3MDA0OF5BMl5BanBnXkFtZTcwNTg4MjIyMQ@@._V1_UY268_CR4,0,182,268_AL_.jpg")
@@ -46,7 +46,7 @@ wanda_sykes.specials.create(name: "I'ma Be Me (2009)", run_time: 87, thumbnail: 
 eddie_murphy.specials.create(name: "Delirious (1983)", run_time: 69, thumbnail: "https://m.media-amazon.com/images/M/MV5BMTQ5MDcyODU0Nl5BMl5BanBnXkFtZTcwMTgxNjA0MQ@@._V1_UY268_CR4,0,182,268_AL_.jpg")
 eddie_murphy.specials.create(name: "Raw (1987)", run_time: 99, thumbnail: "https://m.media-amazon.com/images/M/MV5BOWEwYTk4YTgtZGVjNi00MmI0LTkwOTItOWUxYzBlN2YwZWFkXkEyXkFqcGdeQXVyNzc5MjA3OA@@._V1_UX182_CR0,0,182,268_AL_.jpg")
 
-jerry_seinfeld.specials.create(name: "tand-Up Confidential (1987)", runtime: 55, thumbnail: "https://m.media-amazon.com/images/M/MV5BYjZlNTgxMzYtZjc1ZS00OTQzLThiYWYtMTEzYjNmNDM1NmFkXkEyXkFqcGdeQXVyMzU0NzkwMDg@._V1_UX182_CR0,0,182,268_AL_.jpg")
+jerry_seinfeld.specials.create(name: "Stand-Up Confidential (1987)", run_time: 55, thumbnail: "https://m.media-amazon.com/images/M/MV5BYjZlNTgxMzYtZjc1ZS00OTQzLThiYWYtMTEzYjNmNDM1NmFkXkEyXkFqcGdeQXVyMzU0NzkwMDg@._V1_UX182_CR0,0,182,268_AL_.jpg")
 jerry_seinfeld.specials.create(name: "I'm Telling You for the Last Time (1998)", run_time: 75, thumbnail: "https://m.media-amazon.com/images/M/MV5BNDM4OTY0NTAyMF5BMl5BanBnXkFtZTcwNTcxMDQyMQ@@._V1_UY268_CR0,0,182,268_AL_.jpg")
 jerry_seinfeld.specials.create(name: "Jerry Before Seinfeld (2017)", run_time: 62, thumbnail: "https://m.media-amazon.com/images/M/MV5BOTc2N2I0Y2UtOTgyYy00MTU3LTk1YzItZGIwMDcxY2JkMGQzXkEyXkFqcGdeQXVyMjQzNzk2ODk@._V1_UY268_CR1,0,182,268_AL_.jpg")
 

@@ -4,9 +4,10 @@
     <li><%= comedian.age %></li>
     <li><%= comedian.city %></li>
     <% comedian.specials.each do |special| %>
+      <img class = "thumbnail" src = "<%= special.thumbnail %>" width="60">
       <ul>
         <li><%= special.name %></li>
-        <li><%= special.run_time %></li>
+        <li>Length: <%= special.run_time %> min</li>
       </ul>
     <% end %>
   </ul>
