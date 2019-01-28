@@ -8,6 +8,21 @@
 
   <body>
     <h1>Comedians</h1>
+    <div class = "statistics">
+      <h3>Statistics</h3>
+      <p>Average Special Run Time:  <%= @specials.average(:run_time).round(2) %> min</p>
+      <p>Total TV Specials:  <%= @specials.count(:all)%></p>
+      <p>Average Age:  <%= @comedians.average(:age).round(0) %> years old</p>
+      <div class="dropdown">
+        <link class="dropbtn">Cities</link>
+        <div class="dropdown-content">
+          <% cities = @comedians.distinct.pluck(:city)%>
+          <% cities.each do |city| %>
+            <p><%= city %>
+          <% end %>
+        </div>
+      </div>
+    </div>
     <div class = "grid-container">
       <% @comedians.each do |comedian| %>
         <div class ="grid-item">
