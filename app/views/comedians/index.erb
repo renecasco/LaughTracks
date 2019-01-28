@@ -14,7 +14,7 @@
       <p>Total TV Specials:  <%= @specials.count(:all)%></p>
       <p>Average Age:  <%= @comedians.average(:age).round(0) %> years old</p>
       <div class="dropdown">
-        <link class="dropbtn">Cities</link>
+        <p class="dropbtn">Cities</p>
         <div class="dropdown-content">
           <% cities = @comedians.distinct.pluck(:city)%>
           <% cities.each do |city| %>
